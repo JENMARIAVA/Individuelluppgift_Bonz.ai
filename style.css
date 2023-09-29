@@ -1,4 +1,4 @@
-
+/*///////////////////////indexhtml//////////////////////*/
 body {
     height: 100%;
     background-color: #e1f6f4; 
@@ -14,7 +14,19 @@ body {
     text-align: center;
     padding: 100px;
 }
+.homemenuhome img{
+    width:50px;
+    height:50px;
 
+}
+.homemenuabout img{
+    width:50px;
+    height:50px;
+}
+.homemenubook img {
+    width:50px;
+    height:50px;
+}
 .homemenu a {
     text-decoration: none;
     color:#aeccc6; 
@@ -36,7 +48,7 @@ body {
     padding: 30px;
     color: #aeccc6; 
 }
-/*/////////////////////////////////////////////*/
+/*///////////////////////homehtml//////////////////////*/
 .hotel {
     background-color: #e1f6f4; 
     padding: 20px;
@@ -70,13 +82,75 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.homemenuabout{
+.fotosabout{
     color: #118a7e;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 36px;
 }
 
-/* Make the navigation menu responsive index */
+/*///////////////////////abouthtml//////////////////////*/
+.about {
+   background-image: url('04-night.jpg');
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.abouttext {
+    
+    background-color:  rgba(225, 246, 244, 0.2);
+    padding: 350px 20px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.abouttext h1, h2{
+    color: #118a7e; 
+    border: solid black;
+}
+.abouttext p  {
+    font-size: 20px;
+    color: #aeccc6; 
+}
+.aboutlista{
+    font-size:20px;
+    color: #aeccc6; 
+    list-style: none;
+}
+
+.aboutlink{
+    
+    color: #118a7e; 
+    border:solid black;
+    border-radius:20px;
+    
+
+}
+
+.aboutbook{
+    color: #118a7e; 
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+   
+}
+.aboutbook img{
+    width:50px;
+    height:50px;
+}
+/*///////////////////////abouthtml//////////////////////*/
+@media (max-width: 768px) {
+    .about {
+        grid-template-columns: 1fr;
+       /* background-size: contain;*//*det visas manga gånger */
+    }
+}
+/*///////////////////////indexhtml//////////////////////*/
 @media (max-width: 768px) {
     .homemenu {
         flex-direction: column;
@@ -87,7 +161,7 @@ body {
 }
 
 
-/* Responsive adjustmentshome */
+/*///////////////////////homehtml//////////////////////*/
 @media (max-width: 768px) {
     .hotelheader h1 {
         font-size: 24px;
