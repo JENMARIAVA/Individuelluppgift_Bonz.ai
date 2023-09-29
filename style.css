@@ -1,20 +1,14 @@
 
-/* Make the HTML and body elements cover the entire screen */
- body {
-    height: 100%;
-}
-
-/* Set a background color for the entire page */
 body {
+    height: 100%;
     background-color: #e1f6f4; 
-    font-family: Arial, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     display: flex;
     font-size: 40px;
     flex-direction: column;
     justify-content: space-between;
 }
 
-/* Style the navigation menu */
 .homemenu {
     background-color: #118a7e; 
     text-align: center;
@@ -27,7 +21,6 @@ body {
     margin: 0 10px;
 }
 
-/* Style the logo */
 .logo {
     display: block;
     margin: 300px auto;
@@ -36,20 +29,75 @@ body {
     background-color: #e1f6f4;  
 }
 
-/* Style the footer */
+
 .homefooter {
     background-color: #118a7e; 
     text-align: center;
     padding: 30px;
     color: #aeccc6; 
 }
+/*/////////////////////////////////////////////*/
+.hotel {
+    background-color: #e1f6f4; 
+    padding: 20px;
+    text-align: center;
+}
 
-/* Make the navigation menu responsive */
+.hotelheader h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #118a7e;
+}
+
+.hotelheader p {
+    font-size: 18px;
+    color: #118a7e;
+}
+
+
+.fotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.fotos img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.homemenuabout{
+    color: #118a7e;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Make the navigation menu responsive index */
 @media (max-width: 768px) {
     .homemenu {
         flex-direction: column;
     }
     .homemenu a {
         margin: 10px 0;
+    }
+}
+
+
+/* Responsive adjustmentshome */
+@media (max-width: 768px) {
+    .hotelheader h1 {
+        font-size: 24px;
+    }
+
+    .hotelheader p {
+        font-size: 16px;
+    }
+
+    .fotos img {
+        width: 100%;
     }
 }
