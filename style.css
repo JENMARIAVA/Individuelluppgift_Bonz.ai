@@ -12,30 +12,32 @@ body {
 .homemenu {
     background-color: #118a7e; 
     text-align: center;
-    padding: 100px;
+    padding: 20px; /**/
 }
-.homemenuhome img{
-    width:50px;
-    height:50px;
 
+.homemenuitem{
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    /*justify-content: center; */
 }
-.homemenuabout img{
-    width:50px;
-    height:50px;
-}
-.homemenubook img {
-    width:50px;
-    height:50px;
-}
-.homemenu a {
+.homemenuitem a {
     text-decoration: none;
     color:#aeccc6; 
     margin: 0 10px;
+   
+}
+
+.homemenu img {
+    width: 50px;
+    height:50px;
+    margin-left: 10px;
+    
 }
 
 .logo {
     display: block;
-    margin: 300px auto;
+    margin: 300px auto;/**/
     max-width: 100%;
     height: auto;
     background-color: #e1f6f4;  
@@ -45,7 +47,7 @@ body {
 .homefooter {
     background-color: #118a7e; 
     text-align: center;
-    padding: 30px;
+    padding: 30px;/**/
     color: #aeccc6; 
 }
 /*///////////////////////homehtml//////////////////////*/
@@ -66,30 +68,36 @@ body {
     color: #118a7e;
 }
 
-
-.fotos {
+.hotel main {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column; /* Stack images and text vertically */
+    align-items: center; /* Center items horizontally */
     padding: 20px;
 }
+/*.fotos {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;/*
+    align-items: center;
+    flex-wrap: wrap;/*
+    padding: 20px;
+}*/
 
-.fotos img {
+.hotel main img {
     max-width: 100%;
     height: auto;
-    margin: 10px;
+    margin: 10px auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.fotosabout{
+figcaption .fotosabout{
     color: #118a7e;
     text-decoration: none;
     font-size: 36px;
 }
 
 /*///////////////////////abouthtml//////////////////////*/
-.about {
+/*.about {
    background-image: url('04-night.jpg');
     background-size: cover;
     background-position: center;
@@ -104,7 +112,7 @@ body {
 .abouttext {
     
     background-color:  rgba(225, 246, 244, 0.2);
-    padding: 350px 20px;
+    padding: 350px 20px;/*ta bort 350
     background-size: cover;
     background-position: center center;
 }
@@ -142,12 +150,140 @@ body {
 .aboutbook img{
     width:50px;
     height:50px;
+}*/
+
+header {
+    text-align: center;
+    padding: 0px;
+    color: #aeccc6;
+    background-color:  #118a7e;
+    /*background-image: url(09-day.jpg);
+    background-size: contain;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background-repeat:repeat;*/
 }
+
+/* Update styles for the <section> element */
+ section.about {
+    display: grid;
+    background-image: url('04-night.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    text-align: center;
+}
+
+/* Update styles for the <article> element */
+section.about article.abouttext {
+    background-color: rgba(225, 246, 244, 0.3);
+    padding: 20px; /* Adjusted padding */
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+/* Update styles for headings within .abouttext */
+section.about article.abouttext h2,
+section.about article.abouttext h3 {
+    color: #118a7e;
+    
+}
+
+/* Update styles for the <p> elements within .abouttext */
+section.about article.abouttext p {
+    font-size: 20px;
+    color: #aeccc6;
+}
+
+/* Update styles for the .aboutlista */
+.aboutlista {
+    font-size: 20px;
+    color: #aeccc6;
+    list-style: none;
+}
+
+/* Update styles for the .aboutlink */
+.aboutlink {
+    color: #118a7e;
+    border: solid black;
+    border-radius: 20px;
+    display: inline-block; /* Keep the link inline */
+    padding: 5px 15px; /* Add padding for better styling */
+    text-decoration: none;
+    font-size: 18px; /* Adjusted font size */
+}
+
+/* Update styles for the .aboutbook */
+.aboutbook {
+    color: #118a7e;
+    text-decoration: none;
+    
+}
+
+/* Update styles for the .aboutbook img */
+.aboutbook img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Styles for the footer */
+.footer {
+    background-color: #118a7e;
+    color: #aeccc6;
+    display: flex;
+    justify-content: space-around;
+  
+}
+
+/* Styles for footer articles */
+.footer article {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+/* Styles for headings in footer articles */
+.footer h2 {
+    font-size: 24px;
+}
+
+/* Styles for links in footer articles */
+.footer a {
+    text-decoration: none;
+    color: #aeccc6;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+/* Styles for the address in the footer */
+.footer .address p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+/* Styles for the social media icons in the footer */
+.footer img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer .social-media figure {
+    margin: 0;
+}
+
 /*///////////////////////abouthtml//////////////////////*/
 @media (max-width: 768px) {
     .about {
         grid-template-columns: 1fr;
+        
        /* background-size: contain;*//*det visas manga gånger */
+    }
+    .aboutbook{
+        font-weight: bold;
+        font-style: italic;
+    }
+    .footer{
+        flex-direction: column;
     }
 }
 /*///////////////////////indexhtml//////////////////////*/
@@ -171,7 +307,13 @@ body {
         font-size: 16px;
     }
 
-    .fotos img {
+    .hotel main img {
         width: 100%;
+    }
+    section.hotel main figcaption a.fotosabout{
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+
     }
 }
