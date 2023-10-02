@@ -71,6 +71,7 @@ body {
     font-size: 18px;
     color: #118a7e;
     background-color: #e1f6f4;
+    padding: 20px;
     
 }
 
@@ -86,13 +87,18 @@ body {
     max-width: 100%;
     height: auto;
     margin: 10px auto;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);
+}
+.hotel main p {
+    font-size: 20px;
+    color: #118a7e;
 }
 
 figcaption .fotosabout{
     color: #118a7e;
     text-decoration: none;
     font-size: 36px;
+    
 }
 
 /*///////////////////////abouthtml//////////////////////*/
@@ -103,6 +109,7 @@ header {
     padding: 0px;
     color: #aeccc6;
     background-color:  #118a7e;
+    font-size: 28px;
     
 }
 
@@ -233,6 +240,10 @@ section.about article.abouttext p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
+.containerhome img{
+    width:20px;
+    height:20px;
+}
 .container h2 {
     font-size: 24px;
     margin-bottom: 10px;
@@ -253,6 +264,7 @@ form {
 }
 
 label {
+    font-size: 24px;
     width: 100%;
     margin-bottom: 10px;
     color:#333333;
@@ -340,7 +352,9 @@ button:hover {
     background-color: #0b6358;
 }
 
+
 .bookingfooter {
+    font-size: 24px;
     text-align: center;
     background-color: #118a7e;
     color: #fff;
@@ -372,15 +386,6 @@ button:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
 /*///////////////////////abouthtml//////////////////////*/
 @media (max-width: 768px) {
     .about {
@@ -402,7 +407,10 @@ button:hover {
         flex-direction: column;
     }
     .homemenu a {
-        margin: 10px 0;
+        margin: 10px;
+    }
+    .logo{
+        width: 90%;
     }
 }
 
@@ -425,6 +433,6 @@ button:hover {
         font-weight: bold;
         font-style: italic;
         border: solid black;
-        border-radius: 150px;
+        border-radius: 10px;
     }
 }
