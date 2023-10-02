@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="booking">
+    <section class="booking">
         <div class="container">
             <h2>Book Your Stay</h2>
             <p>Find the perfect room for your eco-friendly getaway.</p>
             
-            <!-- Fake Search Form (No Functionality) -->
+            
             <form>
                 <label for="check-in">Check-In Date:</label>
                 <input type="date" id="check-in" name="check-in">
@@ -21,23 +21,35 @@
                 <button type="submit">Search</button>
             </form>
 
-            <!-- Fake Search Results (Static) -->
-            <div class="search-results">
-                <div class="room">
-                    <h3>Deluxe Room</h3>
-                    <p>Price: $200/night</p>
-                    <button>Book Now</button>
-                </div>
-                <div class="room">
-                    <h3>Suite</h3>
-                    <p>Price: $300/night</p>
-                    <button>Book Now</button>
-                </div>
-            </div>
+            
+            <section class="search-results">
+                <article class="room">
+                    <figure class="roomimage">
+                        <img src="06-day.jpg" alt="day6">
+                        <img src="07-night.jpg" alt="night7">
+                    </figure>
+                    <div class="roomdetails">
+                        <h3>Deluxe Room</h3>
+                        <p>Price: $200/night</p>
+                        <button>Book Now</button>
+                    </div>
+                </article>
+                <article class="room">
+                    <figure class="roomimage">
+                        <img src="08-day.jpg" alt="day8" >
+                        <img src="02-night.jpg" alt="night2">
+                    </figure>
+                    <div class="roomdetails">
+                        <h3>Suite</h3>
+                        <p>Price: $300/night</p>
+                        <button>Book Now</button>
+                    </div>
+                </article>
+            </section>
         </div>
     </section>
-    <!-- Footer -->
-<footer>
+    
+<footer class="bookingfooter">
     <p>&copy; 2023 Bonz.ai Hotel</p>
 </footer>
 </body>
