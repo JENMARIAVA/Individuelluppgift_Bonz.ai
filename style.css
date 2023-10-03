@@ -142,10 +142,14 @@ header {
     background-position: center center;
 }
 
-.about .abouttext h2,
-.about .abouttext h3 {
+.about .abouttext h2{
     color: #118a7e;
+}
+.about .abouttext h3 {
     
+    color:#333333;
+    border-radius: 2px;
+    background-color: rgba(225, 246, 244, 0.2);
 }
 
 .about .abouttext p {
@@ -297,8 +301,10 @@ button[type="submit"]:hover {
 }
 
 .room {
+    border: solid #118a7e; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     background-color: #e1f6f4;
-    border: 1px solid #ccc;
+    /*border: 1px solid #ccc;*/
     border-radius: 4px;
     padding: 20px;
 }
