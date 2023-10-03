@@ -12,32 +12,30 @@ body {
 .homemenu {
     background-color: #118a7e; 
     text-align: center;
-    padding: 20px; /**/
+    padding: 20px;
 }
 
 .homemenuitem{
     display: flex;
     align-items: center; 
     flex-direction: column;
-    /*justify-content: center; */
 }
+
 .homemenuitem a {
     text-decoration: none;
     color:#aeccc6; 
     margin: 0 10px;
-   
 }
 
 .homemenu img {
     width: 50px;
     height:50px;
     margin-left: 10px;
-    
 }
 
 .logo {
     display: block;
-    margin: 300px auto;/**/
+    margin: 300px auto;
     max-width: 100%;
     height: auto;
     background-color: #e1f6f4;  
@@ -46,11 +44,10 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
-
 .homefooter {
     background-color: #118a7e; 
     text-align: center;
-    padding: 30px;/**/
+    padding: 30px;
     color: #aeccc6; 
 }
 /*///////////////////////homehtml//////////////////////*/
@@ -61,34 +58,31 @@ body {
 }
 
 .hotelheader h1 {
-    font-size: 36px;
     margin-bottom: 10px;
     color: #118a7e;
     background-color: #e1f6f4; 
 }
 
 .hotelheader p {
-    font-size: 18px;
     color: #118a7e;
     background-color: #e1f6f4;
     padding: 20px;
-    
 }
 
 .hotel main {
     display: flex;
-    flex-direction: column; /* Stack images and text vertically */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column; 
+    align-items: center; 
     padding: 20px;
 }
-
 
 .hotel main img {
     max-width: 100%;
     height: auto;
     margin: 10px auto;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 }
+
 .hotel main p {
     font-size: 20px;
     color: #118a7e;
@@ -97,24 +91,18 @@ body {
 figcaption .fotosabout{
     color: #118a7e;
     text-decoration: none;
-    font-size: 36px;
-    
 }
 
 /*///////////////////////abouthtml//////////////////////*/
-
-
 header {
     text-align: center;
     padding: 0px;
     color: #aeccc6;
     background-color:  #118a7e;
     font-size: 28px;
-    
 }
 
-
- section.about {
+ .about {
     display: grid;
     background-image: url('04-night.jpg');
     background-size: cover;
@@ -123,28 +111,23 @@ header {
     text-align: center;
 }
 
-
-section.about article.abouttext {
+.about .abouttext {
     background-color: rgba(225, 246, 244, 0.3);
-    padding: 20px; /* Adjusted padding */
+    padding: 20px; 
     background-size: cover;
     background-position: center center;
-    
 }
 
-
-section.about article.abouttext h2,
-section.about article.abouttext h3 {
+.about .abouttext h2,
+.about .abouttext h3 {
     color: #118a7e;
     
 }
 
-
-section.about article.abouttext p {
+.about .abouttext p {
     font-size: 20px;
     color: #aeccc6;
 }
-
 
 .aboutlista {
     font-size: 20px;
@@ -152,17 +135,15 @@ section.about article.abouttext p {
     list-style: none;
 }
 
-
 .aboutlink {
     color: #118a7e;
     border: solid black;
     border-radius: 20px;
-    display: inline-block; /* Keep the link inline */
-    padding: 5px 15px; /* Add padding for better styling */
+    display: inline-block; 
+    padding: 5px 15px; 
     text-decoration: none;
-    font-size: 18px; /* Adjusted font size */
-}
-
+    font-size: 18px;
+ }
 
 .aboutbook {
     color: #118a7e;
@@ -170,24 +151,19 @@ section.about article.abouttext p {
     display: flex;
     flex-direction:column;
     align-items: center;
-    
 }
-
 
 .aboutbook img {
     width: 50px;
     height: 50px;
 }
 
-
 .footer {
     background-color: #118a7e;
     color: #aeccc6;
     display: flex;
     justify-content: space-around;
-  
 }
-
 
 .footer article {
     display: flex;
@@ -195,11 +171,9 @@ section.about article.abouttext p {
     align-items: center;
 }
 
-
 .footer h2 {
     font-size: 24px;
 }
-
 
 .footer a {
     text-decoration: none;
@@ -208,12 +182,10 @@ section.about article.abouttext p {
     font-size: 18px;
 }
 
-
 .footer .address p {
     margin: 5px 0;
     font-size: 18px;
 }
-
 
 .footer img {
     width: 30px;
@@ -224,15 +196,7 @@ section.about article.abouttext p {
     margin: 0;
 }
 
-/**********************************************************************/
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    
-}
-
+/*///////////////////////bookinghtml//////////////////////*/
 .booking {
     background-color: #f2f2f2;
     border-radius: 8px;
@@ -240,14 +204,21 @@ section.about article.abouttext p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .containerhome img{
     width:20px;
     height:20px;
 }
+
 .container h2 {
     font-size: 24px;
     margin-bottom: 10px;
-   color: #118a7e;
+    color: #118a7e;
 }
 
 .container p {
@@ -260,11 +231,11 @@ form {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
-    
 }
 
 label {
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: bold;
     width: 100%;
     margin-bottom: 10px;
     color:#333333;
@@ -285,18 +256,18 @@ button[type="submit"] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 1s;
 }
 
 button[type="submit"]:hover {
-    background-color: #0b6358;
+    background-color:  #76f3e6; 
 }
 
 .search-results {
     /*display: flex;
     justify-content: space-between;*/
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(48%,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50%,1fr));
     gap:20px;
 }
 
@@ -305,7 +276,6 @@ button[type="submit"]:hover {
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 20px;
-    flex-basis: calc(50% - 10px);
 }
 
 .roomimage {
@@ -319,7 +289,7 @@ button[type="submit"]:hover {
 }
 
 .roomimage img {
-   /* max-width: 48%;*/
+   /* max-width: 50%;*/
    max-width: 100%;
 }
 
@@ -339,19 +309,18 @@ button[type="submit"]:hover {
 }
 
 .roomdetails button {
-    background-color: #118a7e;
+    background-color:  #118a7e;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 1s;
 }
 
 button:hover {
-    background-color: #0b6358;
+    background-color: #76f3e6; 
 }
-
 
 .bookingfooter {
     font-size: 24px;
@@ -364,8 +333,54 @@ button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
-/* Add responsive styles for smaller screens */
 @media (max-width: 768px) {
+/*///////////////////////indexhtml//////////////////////*/
+    .homemenu {
+        flex-direction: column;
+    }
+    .homemenu a {
+        margin: 10px;
+    }
+    .logo{
+        width: 90%;
+    }
+/*///////////////////////homehtml//////////////////////*/
+    .hotelheader h1 {
+        font-size: 24px;
+    }
+
+    .hotelheader p {
+        font-size: 20px
+    }
+
+    .hotel main img {
+        width: 100%;
+    }
+    section.hotel main .fotos p{
+        font-size: 18px;
+    }
+    section.hotel main figcaption a.fotosabout{
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+        border: solid black;
+        border-radius: 20px;
+        padding: 5px 15px;
+    }
+/*///////////////////////abouthtml//////////////////////*/
+    .about {
+        grid-template-columns: 1fr;
+        
+       /* background-size: contain;*//*det visas manga gånger */
+    }
+    .aboutbook{
+        font-weight: bold;
+        font-style: italic;
+    }
+    .footer{
+        flex-direction: column;
+    }
+/*///////////////////////bookinghtml//////////////////////*/
     .search-results {
         /*flex-direction: column;*/
         grid-template-columns: 1fr;
@@ -382,57 +397,5 @@ button:hover {
     .roomimage img {
         max-width: 100%;
         margin-bottom: 10px;
-    }
-}
-
-
-/*///////////////////////abouthtml//////////////////////*/
-@media (max-width: 768px) {
-    .about {
-        grid-template-columns: 1fr;
-        
-       /* background-size: contain;*//*det visas manga gånger */
-    }
-    .aboutbook{
-        font-weight: bold;
-        font-style: italic;
-    }
-    .footer{
-        flex-direction: column;
-    }
-}
-/*///////////////////////indexhtml//////////////////////*/
-@media (max-width: 768px) {
-    .homemenu {
-        flex-direction: column;
-    }
-    .homemenu a {
-        margin: 10px;
-    }
-    .logo{
-        width: 90%;
-    }
-}
-
-
-/*///////////////////////homehtml//////////////////////*/
-@media (max-width: 768px) {
-    .hotelheader h1 {
-        font-size: 24px;
-    }
-
-    .hotelheader p {
-        font-size: 16px;
-    }
-
-    .hotel main img {
-        width: 100%;
-    }
-    section.hotel main figcaption a.fotosabout{
-        font-size: 20px;
-        font-weight: bold;
-        font-style: italic;
-        border: solid black;
-        border-radius: 10px;
     }
 }
