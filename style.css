@@ -63,6 +63,7 @@ body {
 
 .homefooter {
     background-color: #118a7e; 
+    font-size: 28px;
     text-align: center;
     padding: 30px;
     color: #aeccc6; 
@@ -81,38 +82,52 @@ body {
     margin-bottom: 10px;
     color: #118a7e;
     background-color: #e1f6f4; 
-    
 }
 
 .hotelheader p {
     color: #118a7e;
     background-color: #e1f6f4;
     padding: 20px;
-   
+    font-size: 20px;
 }
 
-.hotel main {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
+.hotelmain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items:flex-start; 
     padding: 20px;
 }
 
-.hotel main img {
+.hotelfotos {
+    text-align: center; /* Center text within each image container */
+    background-color: #e1f6f4;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+}
+
+.hotelfotos img{
     max-width: 100%;
     height: auto;
-    margin: 10px auto;
+    margin-bottom: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 }
-
-.hotel main p {
+.hotelfotos p {
     font-size: 20px;
     color: #118a7e;
+   
 }
 
-figcaption .fotosabout{
+figcaption {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.fotosabout{
     color: #118a7e;
     text-decoration: none;
+   
 }
 
 /*///////////////////////abouthtml//////////////////////*/
@@ -234,14 +249,23 @@ header {
 }
 
 .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    gap :20px;
 }
 
+.containerhome{
+    grid-column: 2 / -1; 
+    grid-row: 1; 
+    text-align: right; 
+    margin: 10px; 
+}
 .containerhome img{
-    width:20px;
-    height:20px;
+    width:25px;
+    height:auto;
 }
 
 .container h2 {
@@ -293,8 +317,6 @@ button[type="submit"]:hover {
 }
 
 .search-results {
-    /*display: flex;
-    justify-content: space-between;*/
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(50%,1fr));
     gap:20px;
@@ -304,15 +326,11 @@ button[type="submit"]:hover {
     border: solid #118a7e; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     background-color: #e1f6f4;
-    /*border: 1px solid #ccc;*/
     border-radius: 4px;
     padding: 20px;
 }
 
 .roomimage {
-    /*display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;*/
     display: grid;
     grid-template-columns:repeat(2,1fr);
     gap:20px;
@@ -320,7 +338,6 @@ button[type="submit"]:hover {
 }
 
 .roomimage img {
-   /* max-width: 50%;*/
    max-width: 100%;
 }
 
@@ -357,7 +374,7 @@ button:hover {
     font-size: 24px;
     text-align: center;
     background-color: #118a7e;
-    color: #fff;
+    color: #aeccc6;
     padding: 10px 0;
     border-radius: 4px;
     padding: 20px;
@@ -376,33 +393,25 @@ button:hover {
         width: 90%;
     }
 /*///////////////////////homehtml//////////////////////*/
-    .hotelheader h1 {
-        font-size: 24px;
-    }
+   
+.hotelmain {
+    grid-template-columns: 1fr; 
+}
 
-    .hotelheader p {
-        font-size: 20px
-    }
-
-    .hotel main img {
-        width: 100%;
-    }
-    section.hotel main .fotos p{
-        font-size: 18px;
-    }
-    section.hotel main figcaption a.fotosabout{
-        font-size: 24px;
-        font-weight: bold;
-        font-style: italic;
-        border: solid black;
-        border-radius: 20px;
-        padding: 5px 15px;
-    }
+.hotelfotos {
+    margin-bottom: 20px;
+}
+.fotosabout{
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    border: solid black;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
 /*///////////////////////abouthtml//////////////////////*/
     .about {
         grid-template-columns: 1fr;
-        
-       /* background-size: contain;*//*det visas manga gånger */
     }
     .aboutbook{
         font-weight: bold;
@@ -413,7 +422,6 @@ button:hover {
     }
 /*///////////////////////bookinghtml//////////////////////*/
     .search-results {
-        /*flex-direction: column;*/
         grid-template-columns: 1fr;
     }
 
@@ -425,8 +433,10 @@ button:hover {
     .roomimage{
         display:block;
     }
+
     .roomimage img {
         max-width: 100%;
         margin-bottom: 10px;
     }
+    
 }
